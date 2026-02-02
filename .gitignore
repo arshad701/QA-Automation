@@ -1,0 +1,11 @@
+# Maven build folder
+/target/
+
+# Eclipse settings
+/.classpath
+/.project
+/.settings/
+
+# OS files
+Thumbs.db
+.DS_Store
