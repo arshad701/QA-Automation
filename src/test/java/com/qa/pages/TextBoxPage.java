@@ -1,20 +1,23 @@
 package com.qa.pages;
 
-import java.time.Duration;
+//import java.time.Duration;
 
 import org.openqa.selenium.By;
-import org.openqa.selenium.JavascriptExecutor;
+//import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
-import org.openqa.selenium.support.ui.ExpectedConditions;
-import org.openqa.selenium.support.ui.WebDriverWait;
+//import org.openqa.selenium.support.ui.ExpectedConditions;
+//import org.openqa.selenium.support.ui.WebDriverWait;
+import com.qa.utils.WaitUtils;
 
 public class TextBoxPage {
 
 	WebDriver driver;
+	WaitUtils waitPage;
 
 	public TextBoxPage(WebDriver driver) {
 		this.driver = driver;
+		this.waitPage = new WaitUtils(driver);
 	}
 
 	public void openDequoaTextBox() {
@@ -33,13 +36,8 @@ public class TextBoxPage {
 		formCurrentAddress.sendKeys(s3);
 		formPermAddress.sendKeys(s4);
 
-		WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(10));
-		WebElement submitButton = wait.until(ExpectedConditions.elementToBeClickable(By.id("submit")));
-
-		((JavascriptExecutor) driver).executeScript("arguments[0].scrollIntoView(true);", submitButton);
-
-		submitButton.click();
-
+		WebElement submitButton = driver.findElement(By.id("submit"));
+		waitPage.scrollAndClick(submitButton); // handles scroll + wait + click safely
 	}
 
 	public String assertName() {

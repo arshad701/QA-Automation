@@ -9,13 +9,13 @@ import org.testng.Assert;
 
 public class TextBoxTest extends BaseTest {
 	
-	@Test
-	public void Testrun() throws InterruptedException {
+	
+	public void Testrun() {
 		TextBoxPage tb = new TextBoxPage(driver);
 		tb.openDequoaTextBox();
 		tb.formFill("Arshad Kapadi","arshadtest@gmail.com","Irving Texas","Thane India");
 		Assert.assertTrue(tb.assertName().contains("Arshad Kapadi"));
-		Thread.sleep(3000);
+		//Thread.sleep(3000);
 		
 
 	}
