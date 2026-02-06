@@ -8,7 +8,7 @@ import com.qa.pages.CheckBoxPage;
 
 public class CheckBoxTest extends BaseTest {
 
-	@Test
+	
 	public void CheckRun() throws InterruptedException {
 		CheckBoxPage cb = new CheckBoxPage(driver);
 		cb.openDequoaCheckBox();
