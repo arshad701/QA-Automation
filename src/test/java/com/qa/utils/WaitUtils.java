@@ -1,6 +1,8 @@
 package com.qa.utils;
 
 import java.time.Duration;
+
+import org.openqa.selenium.By;
 import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
@@ -25,6 +27,12 @@ public class WaitUtils {
 	public WebElement elementWhenReady(WebElement element) {
 		Wait.until(ExpectedConditions.visibilityOf(element));
 		return element;
+	}
+	
+	
+	public WebElement locatorWhenReady(By locator) {
+		return Wait.until(ExpectedConditions.visibilityOfElementLocated(locator));
+		
 	}
 
 	public void scrollIntoView(WebElement element) {

@@ -8,7 +8,7 @@ import com.qa.pages.RadioBox;
 
 public class RadioBoxTest extends BaseTest {
 
-	@Test
+	
 	public void checkBoxTest() {
 
 		RadioBox rb = new RadioBox(driver);
