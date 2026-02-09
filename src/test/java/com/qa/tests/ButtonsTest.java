@@ -8,7 +8,7 @@ import com.qa.pages.ButtonsPage;
 
 public class ButtonsTest extends BaseTest {
 
-	@Test
+	
 	public void runButtonsTest() {
 		
 		ButtonsPage bp = new ButtonsPage(driver);

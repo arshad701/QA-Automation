@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2026-02-08T19:33:53 CST" name="Default suite" finished-at="2026-02-08T19:34:32 CST" duration-ms="38969">
+    <groups>
+    </groups>
+    <test started-at="2026-02-08T19:33:53 CST" name="Default test" finished-at="2026-02-08T19:34:32 CST" duration-ms="38969">
+      <class name="com.qa.tests.LinksTest">
+        <test-method is-config="true" signature="setup()[pri:0, instance:com.qa.tests.LinksTest@6e9175d8]" started-at="2026-02-08T19:33:53 CST" name="setup" finished-at="2026-02-08T19:33:54 CST" duration-ms="1110" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="runLinksTest()[pri:0, instance:com.qa.tests.LinksTest@6e9175d8]" started-at="2026-02-08T19:33:54 CST" name="runLinksTest" finished-at="2026-02-08T19:34:31 CST" duration-ms="37671" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runLinksTest -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.qa.tests.LinksTest@6e9175d8]" started-at="2026-02-08T19:34:31 CST" name="tearDown" finished-at="2026-02-08T19:34:32 CST" duration-ms="150" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- com.qa.tests.LinksTest -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>
