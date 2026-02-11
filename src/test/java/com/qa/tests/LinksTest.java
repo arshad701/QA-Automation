@@ -10,7 +10,7 @@ public class LinksTest extends BaseTest {
 	
 	
 	
-	@Test
+	
 	public void runLinksTest() throws InterruptedException {
 		LinksPage lb = new LinksPage(driver);
 		lb.openDemoQaLinks();

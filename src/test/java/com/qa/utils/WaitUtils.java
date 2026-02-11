@@ -18,6 +18,12 @@ public class WaitUtils {
 		this.driver = driver;
 		this.Wait = new WebDriverWait(driver, Duration.ofSeconds(10));
 	}
+	
+	
+	public void waiTillAlertReady() {
+		
+		Wait.until(ExpectedConditions.alertIsPresent());
+	}
 
 	public void clickWhenReady(WebElement element) {
 		Wait.until(ExpectedConditions.elementToBeClickable(element));
