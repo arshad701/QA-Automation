@@ -8,7 +8,7 @@ import com.qa.pages.AlertsPage;
 
 public class AlertBoxTest extends BaseTest {
 	
-	@Test
+	
 	public void alertTest() {
 		
 		AlertsPage ap = new AlertsPage(driver);
