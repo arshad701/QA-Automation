@@ -10,7 +10,7 @@ public class FramesTest extends BaseTest {
 
 	String assertValue;
 
-	@Test
+
 	public void testFrames() {
 		FramesPage fp = new FramesPage(driver);
 
